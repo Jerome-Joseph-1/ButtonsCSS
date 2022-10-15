@@ -1,0 +1,158 @@
+@font-face {
+    font-family: SketchitMeansSketchit;
+    src: url('../fonts/sketchit-means-sketchit-font/SketchitMeansSketchit-85o2.ttf');
+}
+
+body{
+    margin: 0;
+}
+
+
+.container{
+    margin: 0;
+    display: flex;
+    height: 960px;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(45deg,#c200f7, #154257);
+    
+}
+
+.box{
+    display: flex;
+    width: 1130px;
+    height: 620px;
+    box-shadow: black 0 0 50px;
+    border-radius: 30px;
+    background-image: url('../pics/background.png');
+    background-size: cover;
+}
+
+.first-half{
+    width: 387px;
+}
+
+.second-half{
+    width: 100%;
+}
+
+
+.img-size{
+    position: absolute;
+    height: 620px;
+    border-radius: 30px 0px 0px 30px;
+    transition: all ease 300ms;
+}
+
+.img-size:hover{
+    /* height: 650px; */
+    border-radius: 30px;
+
+    box-shadow:white 0 0 20px;
+    translate: 0px -5px;
+    height: 630px;
+}
+
+.heading{
+    cursor:alias;
+    user-select: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: white 0px 0px 10px;
+    font-family: "SketchitMeansSketchit";
+    font-weight: 1000;
+    font-size: 70px;
+    height: 180px;
+}
+
+.heading-span{
+    cursor: pointer;
+    transition: all ease 300ms;
+}
+
+.heading-span:hover{
+    translate: 0px -5px;
+    text-shadow: white 0 0 20px;
+
+}
+
+.heading-span:active{
+    translate: 0px 1px;
+}
+
+.button-holder{
+    height: 440px;
+}
+
+.row{
+    display: flex;
+    height: 220px;
+    align-items: center;
+    justify-content: center;
+}
+
+.contains-button{
+    display: flex;
+    height: 200px;
+    width: 200px;
+    align-items: center;
+    justify-content: center;
+}
+
+.button{
+    user-select: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+    width: 150px;
+
+    background-color: #ab008e75;
+    border-radius: 100%;
+    box-shadow: black 0 0 20px;
+
+    border: solid white;
+    transition: all ease 50ms;
+}
+
+.button:hover{
+    box-shadow: 0px 0px 20px rgb(255, 218, 56);
+    height: 160px;
+    width: 160px;
+}
+
+.button:active{
+    height: 120px;
+    width: 120px;
+}
+
+.text{
+    font-size: 64px;
+    font-family: sans-serif;
+
+    color: white;
+    text-shadow: 2px 0px 2px rgb(255, 27, 209),4px 0px 4px rgb(252, 45, 45);
+    transition: all 300ms ease;
+}
+
+.text:hover{
+    cursor: pointer;
+    text-shadow: 2px 0px 2px rgb(243, 179, 232),4px 0px 4px rgb(252, 45, 45);
+}
+
+.underline{
+    background-size: 0% 3px;
+    background-image: linear-gradient(90deg, rgb(94, 250, 255), rgb(255, 84, 192));
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    transition: all 300ms ease;
+}
+
+.underline:hover{
+    background-size: 100% 3px;
+
+}
